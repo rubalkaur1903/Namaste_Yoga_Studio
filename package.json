@@ -1,0 +1,27 @@
+{
+  "name": "qvin_web_development_assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubalkaur1903/Qvin_Web_Development_Assignment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubalkaur1903/Qvin_Web_Development_Assignment/issues"
+  },
+  "homepage": "https://github.com/rubalkaur1903/Qvin_Web_Development_Assignment#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  }
+}
