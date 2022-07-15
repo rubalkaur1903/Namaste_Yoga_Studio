@@ -32,7 +32,7 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route exact path='/' element={<Home />} />
-                <Route exact path="/team_members" element={<Members />} />
+                <Route exact path="/team_members" element={<Members teamMembers={teamMembers} />} />
             </Routes>
         </BrowserRouter>
     )

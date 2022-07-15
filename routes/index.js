@@ -6,7 +6,7 @@ apiRouter.get("/", (req, res, next) => {
     });
 });
 
-const membersRouter = require('./team_members')
-apiRouter.use('/team_members', membersRouter);
+const teamMembersRouter = require('./team_members')
+apiRouter.use('/team_members', teamMembersRouter);
 
 module.exports = apiRouter;

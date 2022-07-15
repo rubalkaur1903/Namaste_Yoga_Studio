@@ -1,14 +1,12 @@
 const express = require('express');
-const membersRouter = express.Router();
+const teamMembersRouter = express.Router();
 
 const { getAllMembers } = require('../db')
 
 // GET /team_members
-membersRouter.get('/', async (req, res, next) => {
-    console.log(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
+teamMembersRouter.get('/', async (req, res, next) => {
     try {
         const members = await getAllMembers();
-        console.log("All members in get request: ", members)
         res.send(members);
     } catch ({name, message}) {
         next({
@@ -18,4 +16,4 @@ membersRouter.get('/', async (req, res, next) => {
     }
 })
 
-module.exports = membersRouter;
+module.exports = teamMembersRouter;
