@@ -1,8 +1,19 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import {
+    Members,
+    Home
+} from '../components'
 
 const App = () => {
     return (
-        <h1>App</h1>
+        <BrowserRouter>
+            <Routes>
+                <Route exact path='/' element={<Home />} />
+                <Route exact path="/team_members" element={<Members />} />
+            </Routes>
+        </BrowserRouter>
     )
 }
 
