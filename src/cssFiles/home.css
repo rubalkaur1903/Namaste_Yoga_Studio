@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+NSW+ACT+Foundation&family=Open+Sans:wght@300&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+SC:wght@300&family=Edu+NSW+ACT+Foundation&family=Open+Sans:wght@300&family=Raleway&display=swap');
+
+.home-image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.welcome-message {
+    color: rgb(150, 106, 84);
+    text-align: center;
+    font-family: 'Cormorant SC';
+}
+.image-paragraph-container {
+    margin-bottom: 10em;
+}
+.home-paragraph-1 {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 1em;
+    font-size: 2.5em;
+    font-family: 'Edu NSW ACT Foundation', 'cursive';
+    color: rgb(150, 106, 84);
+}
+.home-paragraph-2 {
+    margin-top: 2em;
+    margin-left: 2em;
+    margin-right: 1em;
+    font-size: 2.5em;
+    font-family: 'Edu NSW ACT Foundation', 'cursive';
+    color: rgb(150, 106, 84);
+}
+.image-paragraph-1 {
+    display: flex;
+    margin-bottom: 10em;
+    margin-top: 5em;
+}
+.image-paragraph-2 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin: 20px;
+}

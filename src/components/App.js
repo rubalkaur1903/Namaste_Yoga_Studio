@@ -3,7 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {
     Members,
-    Home
+    Home,
+    Navbar
 } from '../components'
 import { callApi } from "./util";
 
@@ -30,10 +31,15 @@ const App = () => {
 
     return (
         <BrowserRouter>
-            <Routes>
-                <Route exact path='/' element={<Home />} />
-                <Route exact path="/team_members" element={<Members teamMembers={teamMembers} />} />
-            </Routes>
+            <div>
+                <Navbar />
+            </div>
+            <div>
+                <Routes>
+                    <Route exact path='/' element={<Home />} />
+                    <Route exact path="/team_members" element={<Members teamMembers={teamMembers} />} />
+                </Routes>
+            </div>
         </BrowserRouter>
     )
 }

@@ -15,8 +15,8 @@ const teamMembers = () => {
             imageURL: "https://i.icanvas.com/AMY83?d=2&sh=s&p=1&bg=g&t=1623826065"
         },
         {
-            firstName: "Jennifer",
-            lastName: "Aniston",
+            firstName: "Rachel",
+            lastName: "Greene",
             title: "Yoga Instructor",
             team: "Instructor",
             imageURL: "https://www.artgalleryjose.com/wp-content/uploads/2013/10/Jennifer-Aniston.jpg"
@@ -68,7 +68,7 @@ const teamMembers = () => {
             lastName: "Cat",
             title: "Security Guard",
             team: "Security",
-            imageURL: "https://static.wikia.nocookie.net/warner-bros-entertainment/images/0/0d/001_-_Tom_Cat.jpg/revision/latest/top-crop/width/360/height/450?cb=20210727171757"
+            imageURL: "https://cdn.pixabay.com/photo/2020/05/11/15/38/tom-5158824_1280.png"
         },
         {
             firstName: "David",
