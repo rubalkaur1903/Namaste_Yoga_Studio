@@ -21,6 +21,9 @@ server.use((req, res, next) => {
     res.sendFile(path.join(__dirname, 'build', 'index.html'))
 });
 
+// here's our API
+server.use('/api', require('./routes'));
+
 // bring in the DB connection
 const { client } = require('./db/client')
 

@@ -3,6 +3,7 @@ export const callApi = async ({ url, method, token, body }) => {
         const options = {
             method: method ? method.toUpperCase() : 'GET',
             headers: {
+                'Accept': 'application/json',
                 'Content-Type': 'application/json',
             },
             body: JSON.stringify(body)
