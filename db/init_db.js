@@ -1,7 +1,9 @@
 const { client } = require('./client');
 const { dropTables, createTables } = require('./seed')
 const { getAllMembers, createTeamMembers } = require('./members');
+const { getAllJobs, createJobs } = require('./jobs')
 const { teamMembers } = require('./seed_data_members');
+const { allJobs } = require('./seed_data_jobs');
 
 
 const createInitialTeamMembers = async () => {
@@ -15,12 +17,25 @@ const createInitialTeamMembers = async () => {
     }
 }
 
+const createInitialJobs = async () => {
+    try {
+        console.log("Creating the initial jobs......");
+        const initialJobs = await allJobs()
+        console.log("All Jobs: ", initialJobs)
+        await Promise.all(initialJobs.map(createJobs))
+    } catch (error) {
+        console.error(error);
+        throw error;
+    }
+}
+
 const rebuildDB = async () => {
     try {
         client.connect()
         await dropTables();
         await createTables();
         await createInitialTeamMembers();
+        await createInitialJobs();
     } catch (error) {
         console.error(error);
         throw error;
@@ -34,6 +49,10 @@ const testDB = async () => {
         console.log("calling getAllMembers");
         const allMembers = await getAllMembers();
         console.log("getAllMembers in testDB: ", allMembers);
+
+        console.log("calling getAllJobs");
+        const allJobs = await getAllJobs();
+        console.log("getAllJobs in testDB: ", allJobs);
 
         console.log("Finishes Database test!")  
     } catch (error) {

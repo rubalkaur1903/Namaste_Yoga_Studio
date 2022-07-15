@@ -1,7 +1,11 @@
 const {
-    getAllMembers
+    getAllMembers,
 } = require('./members');
+const {
+    getAllJobs
+} = require('./jobs')
 
 module.exports = {
-    getAllMembers
+    getAllMembers,
+    getAllJobs
 }

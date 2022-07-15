@@ -9,4 +9,7 @@ apiRouter.get("/", (req, res, next) => {
 const teamMembersRouter = require('./team_members')
 apiRouter.use('/team_members', teamMembersRouter);
 
+const jobsRouter = require('./jobs');
+apiRouter.use('/jobs', jobsRouter);
+
 module.exports = apiRouter;

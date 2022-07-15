@@ -6,13 +6,16 @@ import '../cssFiles/app.css'
 import {
     Members,
     Home,
-    Navbar
+    Navbar,
+    Jobs
 } from '../components'
 import { callApi } from "./util";
 
 const App = () => {
     const [ teamMembers, setTeamMembers ] = useState([]);
+    const [ jobs, setJobs ] = useState([])
     console.log("teamMembers: ", teamMembers)
+    console.log("jobs: ", jobs)
 
     const fetchTeamMembers = async () => {
         const membersResp = await callApi({
@@ -23,9 +26,25 @@ const App = () => {
         return membersResp;
     }
 
+    const fetchJobs = async () => {
+        const jobsResp = await callApi({
+            url: '/jobs'
+        });
+        console.log("jobsResp", jobsResp);
+        if(jobsResp) setJobs(jobs)
+    }
+
     useEffect(() => {
         try {
             fetchTeamMembers();
+        } catch (error) {
+            console.error(error);
+        }
+    }, [])
+
+    useEffect(() => {
+        try {
+            fetchJobs();
         } catch (error) {
             console.error(error);
         }
@@ -40,6 +59,7 @@ const App = () => {
                 <Routes>
                     <Route exact path='/' element={<Home />} />
                     <Route exact path="/team_members" element={<Members teamMembers={teamMembers} />} />
+                    <Route exact path="/jobs" element={<Jobs jobs={jobs} />} />
                 </Routes>
             </div>
         </BrowserRouter>
