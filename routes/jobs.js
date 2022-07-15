@@ -14,6 +14,6 @@ jobsRouter.get('/', async (req, res, next) => {
             message: 'Unable to get the jobs'
         })
     }
-})
+});
 
 module.exports = jobsRouter

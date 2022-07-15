@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Edu+NSW+ACT+Foundation&family=Open+Sans:wght@300&family=Raleway&display=swap');
+
+.culture-image {
+    height: 500px;
+    width: 600px;
+    margin: 30px;
+    border: 0.5px solid black;
+    border-radius: 1em;
+}
+
+.jobs-culture-images {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.culture-paragraph {
+    margin: 20px 10px;
+    font-size: 2em;
+    font-family: 'Edu NSW ACT Foundation', 'cursive';
+}
+
+.jobs-heading {
+    text-align: center;
+    margin: 20px;
+}
+.jobs-h2 {
+    font-family: 'Edu NSW ACT Foundation', 'cursive';
+    text-align: center;
+    font-size: 2em;
+}
+.all-jobs {
+    margin: 30px;
+}
+.job-single {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.job-single-link {
+    text-decoration: none;
+    color: black;
+}
+.job-single-link:hover {
+    text-decoration: underline;
+}
