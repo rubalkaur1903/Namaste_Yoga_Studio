@@ -12,6 +12,8 @@
     color: rgb(150, 106, 84);
     text-align: center;
     font-family: 'Cormorant SC';
+    font-size: 3em;
+    margin: 20px;
 }
 .image-paragraph-container {
     margin-bottom: 10em;

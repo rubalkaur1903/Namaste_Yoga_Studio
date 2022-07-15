@@ -1,20 +1,22 @@
 .navbar {
     display: flex;
-    justify-content: center;
-    color: aliceblue;
+    justify-content: flex-end;
     font-size: 1.5em;
-    margin: 10px;
-    padding: 10px;
+    top: 0;
+    position: sticky;
+    margin: 0;
+    padding: 5px;
+    background-color: rgb(191, 137, 72);
 }
 .links {
     margin: 10px;
     padding: 10px;
     text-decoration: none;
-    color: rgb(193, 142, 80);
-    border: 0.5px solid rgb(193, 142, 80);
+    color: rgb(64, 47, 26);
+    border: 0.5px solid rgb(64, 47, 26);
     border-radius: 10px;
 }
 .links:hover {
     color: black;
-    background-color: rgb(193, 142, 80);
+    background-color: rgb(234, 169, 85);
 }

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import '../cssFiles/app.css'
+
 import {
     Members,
     Home,
@@ -31,7 +33,7 @@ const App = () => {
 
     return (
         <BrowserRouter>
-            <div>
+            <div className="header">
                 <Navbar />
             </div>
             <div>
