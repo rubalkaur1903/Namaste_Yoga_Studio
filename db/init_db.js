@@ -35,8 +35,7 @@ const testDB = async () => {
         const allMembers = await getAllMembers();
         console.log("getAllMembers in testDB: ", allMembers);
 
-        console.log("Finishes Database test!")
-        
+        console.log("Finishes Database test!")  
     } catch (error) {
         console.error(error);
         throw error;

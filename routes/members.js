@@ -5,6 +5,7 @@ const { getAllMembers } = require('../db')
 
 // GET /team_members
 membersRouter.get('/', async (req, res, next) => {
+    console.log("Enter the get route for team_members")
     try {
         const members = await getAllMembers();
         console.log("All members in get request: ", members)

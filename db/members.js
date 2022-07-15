@@ -21,6 +21,7 @@ const createTeamMembers = async ({
 }
 
 const getAllMembers = async () => {
+    console.log("Enter getAllMembers....")
     try {
         const { rows: members } = await client.query(`
             SELECT * FROM team_members;
