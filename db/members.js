@@ -25,6 +25,7 @@ const getAllMembers = async () => {
         const { rows: members } = await client.query(`
             SELECT * FROM team_members;
         `);
+        console.log("members in getAllMembers: ", members)
         return members;
     } catch (error) {
         console.error(error);
