@@ -1,12 +1,33 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import {
     Members,
     Home
 } from '../components'
+import { callApi } from "./util";
 
 const App = () => {
+    const [ teamMembers, setTeamMembers ] = useState([]);
+    console.log("teamMembers: ", teamMembers)
+
+    const fetchTeamMembers = async () => {
+        const membersResp = await callApi({
+            url: '/team_members'
+        });
+        console.log("membersResp: ", membersResp)
+        if(membersResp) setTeamMembers(membersResp)
+        return membersResp;
+    }
+
+    useEffect(() => {
+        try {
+            fetchTeamMembers();
+        } catch (error) {
+            console.error(error);
+        }
+    }, [])
+
     return (
         <BrowserRouter>
             <Routes>
