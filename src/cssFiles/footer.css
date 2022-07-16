@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+SC:wght@300&family=Edu+NSW+ACT+Foundation&family=Open+Sans:wght@300&family=Raleway&display=swap');
+
+.footer-container {
+    background-color: rgb(191, 137, 72);
+    padding: 20px;
+    font-family: 'Cormorant SC';
+    font-size: 1.5em;
+}
+.footer-heading {
+    text-align: center;
+}
+.socials-container {
+    text-align: center;
+    padding: 10px;
+}
+.social-media-instagram, .social-media-twitter {
+    margin: 10px;
+}
+.social-media-instagram:hover {
+    color: rgb(144, 20, 90);
+}
+.social-media-twitter:hover {
+    color: rgb(60, 166, 242);
+}

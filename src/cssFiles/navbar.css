@@ -24,10 +24,10 @@
     padding-right: 12px;
     text-decoration: none;
     color: rgb(64, 47, 26);
-    border: 0.5px solid rgb(64, 47, 26);
     border-radius: 10px;
 }
 .links:hover {
     color: black;
     background-color: rgb(234, 169, 85);
+    border: 0.5px solid rgb(64, 47, 26);
 }
