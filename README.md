@@ -1,5 +1,17 @@
 ### Qvin_Web_Development_Assignment
 
+### to check out the website, in the VS Code please open two terminals.
+
+### First run "npm i"
+
+### then
+
+### On the first one run the command "npm run server:dev"
+
+### On the second terminal run the command "npm run client:dev"
+
+### It should take you to the website!
+
 # Namaste Yoga
 
 ## Namaste Yoga is a website for Namaste Yoga Studio in San Jose, CA.
