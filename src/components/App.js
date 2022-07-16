@@ -8,7 +8,8 @@ import {
     Home,
     Navbar,
     Jobs,
-    SubmitApplication
+    SubmitApplication,
+    Footer
 } from '../components'
 import { callApi } from "./util";
 
@@ -43,6 +44,9 @@ const App = () => {
                     <Route exact path="/jobs" element={<Jobs />} />
                     <Route exact path='/job/:id' element={<SubmitApplication />} />
                 </Routes>
+            </div>
+            <div className="footer">
+                <Footer />
             </div>
         </BrowserRouter>
     )

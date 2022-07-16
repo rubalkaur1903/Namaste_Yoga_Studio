@@ -23,16 +23,17 @@ const Jobs = () => {
     
     return (
         <div>
-            <div className="culture-paragraph">
+            <div className="culture">
                 <h1 className="jobs-heading">Join our team!</h1>
-                <p>At Namaste Yoga, our team's success and customer satisfaction are our top priorities. As we care about our customers' well-being, we also care about our employees' health care. We are a team of extremely kind, funny and creative people who love helping each other grow.</p>
+                <p className="culture-paragraph">At Namaste Yoga, our team's success and customer satisfaction are our top priorities. As we care about our customers' well-being, we also care about our employees' health care. We are a team of extremely kind, funny and creative people who love helping each other grow.</p>
             </div>
             <div className="jobs-culture-images">
                 <img className="culture-image" src="https://www.thestatesman.com/wp-content/uploads/2022/01/yog-2.jpg" alt="yoga work culture" />
                 <img className="culture-image" src="https://img.freepik.com/free-vector/organic-flat-illustration-people-meditating_52683-60231.jpg?w=2000" alt="yoga work culture" />
             </div>
             <div className="jobs-div">
-                <h2 className="jobs-h2">Job Openings</h2>
+                <h1 className="jobs-h1">Job Openings</h1>
+                <h2 className="jobs-h2">We cannot wait to meet you. Please click on the job title to submit your application. Good Luck!!</h2>
                 <div className="all-jobs">
                     {
                         jobs.map(job => {

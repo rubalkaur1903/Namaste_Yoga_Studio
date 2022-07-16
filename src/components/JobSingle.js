@@ -7,6 +7,7 @@ const JobSingle = ({ job }) => {
     return (
         <div className="job-single">
             <Link className="job-single-link" to={`/job/${job.id}`}>{job.title}</Link>
+            <p>{job.jobURL}</p>
         </div>
     )
 }

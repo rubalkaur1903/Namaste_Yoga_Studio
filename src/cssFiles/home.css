@@ -15,6 +15,13 @@
     font-size: 3em;
     margin: 20px;
 }
+.home-parts-headings {
+    font-family: 'Cormorant SC';
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 40px;
+    font-size: 3em;
+}
 .image-paragraph-container {
     margin-bottom: 10em;
 }
@@ -36,12 +43,31 @@
 }
 .image-paragraph-1 {
     display: flex;
-    margin-bottom: 10em;
-    margin-top: 5em;
+    margin-bottom: 5em;
+    margin-top: 1em;
 }
 .image-paragraph-2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
+    margin: 20px;
+}
+.mission-paragraph {
+    font-size: 2.5em;
+    font-family: 'Edu NSW ACT Foundation', 'cursive';
+    color: rgb(150, 106, 84);
+    margin: 2em;
+    text-align: center;
+}
+
+.values {
+    font-size: 2.5em;
+    font-family: 'Edu NSW ACT Foundation', 'cursive';
+    color: rgb(150, 106, 84);
+    margin: 2em;
+    text-align: center;
+    list-style: none;
+}
+.values-list {
     margin: 20px;
 }

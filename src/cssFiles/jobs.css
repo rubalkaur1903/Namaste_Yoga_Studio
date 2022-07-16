@@ -13,28 +13,36 @@
     justify-content: space-evenly;
 }
 
-.culture-paragraph {
+.culture {
     margin: 20px 10px;
     font-size: 2em;
     font-family: 'Edu NSW ACT Foundation', 'cursive';
 }
-
+.culture-paragraph {
+    text-align: center;
+}
 .jobs-heading {
     text-align: center;
     margin: 20px;
 }
+.jobs-h1 {
+    font-family: 'Edu NSW ACT Foundation', 'cursive';
+    text-align: center;
+    margin: 2em;
+}
 .jobs-h2 {
     font-family: 'Edu NSW ACT Foundation', 'cursive';
     text-align: center;
-    font-size: 2em;
 }
 .all-jobs {
     margin: 30px;
 }
 .job-single {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin: 10px;
+    text-align: center;
+    margin: 20px;
 }
 .job-single-link {
     text-decoration: none;
