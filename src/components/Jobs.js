@@ -5,12 +5,10 @@ import '../cssFiles/jobs.css'
 
 const Jobs = () => {
     const [ jobs, setJobs ] = useState([]);
-    console.log("jobs in Jobs: ", jobs)
     const fetchJobs = async () => {
         const jobsResp = await callApi({
             url: '/jobs'
-        })
-        console.log("jobsResp in Jobs: ", jobsResp)
+        });
         if(jobsResp) setJobs(jobsResp)
     }
     useEffect(() => {
@@ -36,9 +34,13 @@ const Jobs = () => {
                 <h2 className="jobs-h2">We cannot wait to meet you. Please click on the job title to submit your application. Good Luck!!</h2>
                 <div className="all-jobs">
                     {
+                        jobs ?
                         jobs.map(job => {
                             return <JobSingle key={job.id} job={job} />
-                        })
+                        }) :
+                        <div className="no-jobs">
+                            <h1>We are not hiring right now. Please follow us on Instagram and Twitter to get updates on our Job Openings!</h1>
+                        </div>
                     }
                 </div>
             </div>

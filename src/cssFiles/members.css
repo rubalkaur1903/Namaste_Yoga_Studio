@@ -38,3 +38,9 @@
     margin: 20px;
     font-family: 'Cormorant SC';
 }
+
+@media (max-width: 768px) {
+    .members-container {
+        padding: 30px;
+    }
+}

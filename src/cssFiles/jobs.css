@@ -49,5 +49,23 @@
     color: black;
 }
 .job-single-link:hover {
+    color: blue;
     text-decoration: underline;
+}
+.job-single-url:hover {
+    color: blue;
+    text-decoration: underline;
+}
+@media (max-width: 768px) {
+    .jobs-culture-images {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .culture-image {
+        height: 300px;
+        width: 400px;
+    }
+    .culture {
+        margin: 20px;
+    }
 }
