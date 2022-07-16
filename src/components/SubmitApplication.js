@@ -9,8 +9,8 @@ const SubmitApplication = () => {
     let navigate = useNavigate();
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert("Congratulations! You have successfully applied for this job!")
-        navigate('/jobs')
+        navigate('/jobs');
+        alert("Congratulations! You have successfully applied for this job!");
     }
     return (
         <div className="submission-form-page">
