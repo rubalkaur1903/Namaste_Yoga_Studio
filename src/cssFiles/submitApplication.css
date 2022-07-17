@@ -42,11 +42,16 @@
 }
 .submit-btn {
     background-color: rgb(191, 137, 72);
-    padding: 7px;
-    border-radius: 10px;
+    padding: 0.7em 1.7em;
+    border-radius: 0.5em;
+    font-size: 13px;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 4px 8px 8px rgb(223, 192, 154);
 }
 .submit-btn:hover {
     background-color: rgb(234, 169, 85);
+    box-shadow: -4px -8px 8px rgb(223, 192, 154);
 }
 .submission-label-name, .submission-label-email {
     padding-left: 35px;

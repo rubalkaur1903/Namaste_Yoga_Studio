@@ -23,7 +23,8 @@
     background-color: rgb(218, 171, 113);
 }
 .members-info:hover {
-    background-color: rgb(169, 124, 68);
+    background-color: rgb(200, 155, 100);
+    box-shadow: 6px 10px 12px rgb(91, 71, 45);
 }
 
 .profile-image {
