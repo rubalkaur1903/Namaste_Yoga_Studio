@@ -5,11 +5,12 @@ import '../cssFiles/app.css'
 
 import {
     Members,
-    Home,
+    AboutUs,
     Navbar,
     Jobs,
     SubmitApplication,
-    Footer
+    Footer,
+    Home
 } from '../components'
 import { callApi } from "./util";
 
@@ -40,6 +41,7 @@ const App = () => {
             <div>
                 <Routes>
                     <Route exact path='/' element={<Home />} />
+                    <Route exact path='/aboutus' element={<AboutUs />} />
                     <Route exact path="/team_members" element={<Members teamMembers={teamMembers} />} />
                     <Route exact path="/jobs" element={<Jobs />} />
                     <Route exact path='/job/:id' element={<SubmitApplication />} />

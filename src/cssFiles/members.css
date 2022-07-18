@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+SC:wght@300&family=Edu+NSW+ACT+Foundation&family=Open+Sans:wght@300&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+SC:wght@300&family=Dancing+Script&family=Edu+NSW+ACT+Foundation&family=Open+Sans:wght@300&family=Raleway&display=swap');
 
+/* background-image: url("https://img.freepik.com/premium-vector/cute-brown-aesthetic-abstract-minimal-background-perfect-wallpaper-backdrop-postcard-background_565280-444.jpg?w=2000");
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+
 .members-container {
     display: flex;
     flex-wrap: wrap;
@@ -33,7 +37,7 @@
 }
 
 .members-heading {
-    color: rgb(150, 106, 84);
+    color: rgb(93, 64, 27);
     text-align: center;
     padding: 10px;
     margin: 20px;

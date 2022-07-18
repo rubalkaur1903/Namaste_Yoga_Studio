@@ -7,7 +7,7 @@
     position: sticky;
     margin: 0;
     padding: 5px;
-    background-color: rgb(191, 137, 72);
+    background-color: rgb(231, 205, 167);
 }
 .navbar-links {
     display: flex;
@@ -34,4 +34,24 @@
     background-color: rgb(180, 126, 56);
     border: 0.5px solid rgb(64, 47, 26);
     box-shadow: -4px -6px 10px rgb(225, 166, 94);
+}
+
+@media (max-width: 768px) {
+    .navbar-links {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .links {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 5px;
+        text-align: center;
+    }
+    .navbar-image-div {
+        text-align: center;
+    }
 }
