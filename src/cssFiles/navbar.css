@@ -17,6 +17,9 @@
     width: 70px;
     border-radius: 50%;
 }
+.navbar-image:hover {
+    box-shadow: 2px 3px 5px rgb(111, 72, 24);
+}
 .links {
     margin: 10px;
     padding-top: 12px;
