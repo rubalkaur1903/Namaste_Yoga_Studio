@@ -12,7 +12,7 @@ apiRouter.use('/team_members', teamMembersRouter);
 const jobsRouter = require('./jobs');
 apiRouter.use('/jobs', jobsRouter);
 
-const jobSubmissionRouter = require('./job_submission');
-apiRouter.use('/job', jobSubmissionRouter);
+// const jobSubmissionRouter = require('./job_submission');
+// apiRouter.use('/job', jobSubmissionRouter);
 
 module.exports = apiRouter;
