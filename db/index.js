@@ -4,12 +4,10 @@ const {
 const {
     getAllJobs,
     getJobById,
-    createJobSubmission
 } = require('./jobs')
 
 module.exports = {
     getAllMembers,
     getAllJobs,
-    getJobById,
-    createJobSubmission
+    getJobById
 }

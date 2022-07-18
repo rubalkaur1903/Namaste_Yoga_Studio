@@ -37,15 +37,6 @@ const createTables = async () => {
                 "jobURL" TEXT UNIQUE NOT NULL
             )
         `);
-        // await client.query(`
-        //     CREATE TABLE submissions (
-        //         id SERIAL PRIMARY KEY,
-        //         "jobId" INTEGER REFERENCES jobs(id),
-        //         name VARCHAR(255) NOT NULL,
-        //         email TEXT NOT NULL UNIQUE CHECK(POSITION(@ IN email) > 1),
-        //         "linkedInURL" TEXT NOT NULL
-        //     )  
-        // `)
         
         console.log("Finishes creating tables!")
     } catch (error) {
