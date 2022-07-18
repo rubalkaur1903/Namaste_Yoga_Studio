@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+SC:wght@300&family=Edu+NSW+ACT+Foundation&family=Open+Sans:wght@300&family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
+
+.about-us-container {
+    background-color: white;
+}
 .about-image-1, .about-image-2 {
     width: 400px;
     height: 400px;
