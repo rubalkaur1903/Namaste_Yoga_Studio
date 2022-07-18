@@ -14,20 +14,20 @@ const createJobs = async ({ title, jobURL}) => {
     }
 }
 
-const createJobSubmission = async ({ name, email, linkedInURL, jobId }) => {
-    try {
-        const { rows: [jobSubmission] } = await client.query(`
-            INSERT INTO submissions(name, email, "linkedInURL")
-            VALUES ($1, $2, $3)
-            WHERE "jobId"=$4
-            RETURNING *;
-        `, [name, email, linkedInURL, jobId]);
-        return jobSubmission;
-    } catch (error) {
-        console.log(error);
-        throw error;
-    }
-}
+// const createJobSubmission = async ({ name, email, linkedInURL, jobId }) => {
+//     try {
+//         const { rows: [jobSubmission] } = await client.query(`
+//             INSERT INTO submissions(name, email, "linkedInURL")
+//             VALUES ($1, $2, $3)
+//             WHERE "jobId"=$4
+//             RETURNING *;
+//         `, [name, email, linkedInURL, jobId]);
+//         return jobSubmission;
+//     } catch (error) {
+//         console.log(error);
+//         throw error;
+//     }
+// }
 
 const getAllJobs = async () => {
     try {
@@ -59,6 +59,5 @@ const getJobById = async (id) => {
 module.exports = {
     createJobs,
     getAllJobs,
-    createJobSubmission,
     getJobById
 }
